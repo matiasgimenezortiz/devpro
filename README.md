@@ -15,10 +15,13 @@ To log messages, use the `log_message` function provided by the `Logger` class. 
 ```java
 Logger.log_message("application.log", "User logged in", "INFO");
 Logger.log_message("application.log", "Failed login attempt", "WARNING");
+```
 
 ### Example log entries in application.log:
+```java
 [2023-08-10 15:23:45] [INFO] User logged in
 [2023-08-10 15:25:30] [WARNING] Failed login attempt
+```
 
 ### Tests
 Tests for the Logger class are included in the LoggerTest class. These tests validate the correctness of the log messages and the logging functionality.
@@ -34,8 +37,10 @@ To sort products, use the sortProducts function provided by the InventoryManager
 List<Product> sortedProducts = InventoryManager.sortProducts(products, "price", false);
 
 ### Example output:
+```java
 [INFO] Sorted products based on price in descending order:
 
 Product{name='Product B', price=200, stock=3}
 Product{name='Product A', price=100, stock=5}
 Product{name='Product C', price=50, stock=10}
+```
